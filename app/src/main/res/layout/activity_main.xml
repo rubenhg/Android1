@@ -15,10 +15,12 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@+id/scrollView"
+        android:layout_height="wrap_content"
+
+        android:background="#fa436d"
         android:gravity="right"
-        android:background="#e54615">
+        android:layout_alignParentTop="true"
+        android:id="@+id/topbar">
 
         <Button
             android:layout_width="wrap_content"
@@ -48,7 +50,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-
+        android:layout_below="@id/topbar"
         android:fillViewport="false"
         android:background="#ffffff">
 
@@ -75,8 +77,8 @@
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:id="@+id/imgPerfil"
-                        android:background="#6ed280"
-                         />
+                        android:background="#fcfdfc"
+                        android:src="@drawable/simpsom" />
 
                     <EditText
                         android:layout_width="wrap_content"
@@ -86,7 +88,8 @@
                         android:ems="10"
                         android:id="@+id/nametxt"
                         android:layout_weight="1"
-                        android:layout_gravity="bottom" />
+                        android:layout_gravity="bottom"
+                        android:enabled="false" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -109,7 +112,8 @@
                         android:layout_height="wrap_content"
                         android:inputType="textEmailAddress"
                         android:ems="10"
-                        android:id="@+id/mailtxt" />
+                        android:id="@+id/mailtxt"
+                        android:enabled="false" />/>
                 </LinearLayout>
                 <LinearLayout
                     android:orientation="horizontal"
@@ -131,7 +135,8 @@
                         android:layout_height="wrap_content"
                         android:inputType="textEmailAddress"
                         android:ems="10"
-                        android:id="@+id/tlftxt" />
+                        android:id="@+id/tlftxt"
+                        android:enabled="false" />/>
                 </LinearLayout>
                 <LinearLayout
                     android:orientation="horizontal"
@@ -153,7 +158,8 @@
                         android:layout_height="wrap_content"
                         android:inputType="textEmailAddress"
                         android:ems="10"
-                        android:id="@+id/dirtxt" />
+                        android:id="@+id/dirtxt"
+                        android:enabled="false" />/>
                 </LinearLayout>
                 <LinearLayout
                     android:orientation="horizontal"
@@ -183,7 +189,8 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/datePicker"
                         android:layout_alignParentBottom="true"
-                        android:layout_centerHorizontal="true" />
+                        android:layout_centerHorizontal="true"
+                        android:calendarViewShown="false" />
                 </LinearLayout>
 
             </LinearLayout>

@@ -13,11 +13,12 @@ public class MainActivityController implements View.OnClickListener,View.OnFocus
 
     @Override
     public void onClick(View view) {
-        vista.txtHolaMundo.setText("Hola Mundo!! Hey Hey");
+
     }
 
     @Override
     public void onFocusChange(View view, boolean b) {
 
     }
+
 }
