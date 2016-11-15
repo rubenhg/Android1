@@ -16,7 +16,6 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
         android:background="#fa436d"
         android:gravity="right"
         android:layout_alignParentTop="true"
@@ -26,7 +25,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Volver"
-            android:id="@+id/btnEdit"
+            android:id="@+id/btnVolver"
             android:layout_alignParentTop="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true" />
@@ -35,7 +34,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Edit"
-            android:id="@+id/btnvolver"
+            android:id="@+id/btnEdit"
             android:layout_alignParentTop="true"
             android:layout_toLeftOf="@+id/btnEdit"
             android:layout_toStartOf="@+id/btnEdit" />
@@ -108,12 +107,13 @@
                         android:textSize="18dp" />
 
                     <EditText
-                        android:layout_width="wrap_content"
+                        android:layout_width="177dp"
                         android:layout_height="wrap_content"
                         android:inputType="textEmailAddress"
                         android:ems="10"
                         android:id="@+id/mailtxt"
-                        android:enabled="false" />/>
+                        android:enabled="false"
+                        android:layout_marginLeft="15dp" />
                 </LinearLayout>
                 <LinearLayout
                     android:orientation="horizontal"
@@ -136,7 +136,8 @@
                         android:inputType="textEmailAddress"
                         android:ems="10"
                         android:id="@+id/tlftxt"
-                        android:enabled="false" />/>
+                        android:enabled="false"
+                        android:layout_marginLeft="20dp" />/>
                 </LinearLayout>
                 <LinearLayout
                     android:orientation="horizontal"
@@ -159,7 +160,8 @@
                         android:inputType="textEmailAddress"
                         android:ems="10"
                         android:id="@+id/dirtxt"
-                        android:enabled="false" />/>
+                        android:enabled="false"
+                        android:layout_marginLeft="20dp" />/>
                 </LinearLayout>
                 <LinearLayout
                     android:orientation="horizontal"
